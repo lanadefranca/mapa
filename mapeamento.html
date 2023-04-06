@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mapeamento</title>
+<style>
+    body
+    {
+        overflow: hidden;
+    }
+
+    .imagem
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    .boneco
+    {
+        position: absolute;
+        top: 450px;
+        left: 500px;
+    }
+</style>
+</head>
+<body onmousemove="MoveBoneco(event);">
+    <map name="meu_mapa">
+        <area shape="circle" coords="260,440,20" href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul">
+        <area shape="circle" coords="300,410,20" href="https://pt.wikipedia.org/wiki/Santa_Catarina">
+        <area shape="circle" coords="280,380,20" href="https://pt.wikipedia.org/wiki/Paran%C3%A1">
+        <area shape="circle" coords="280,380,20" href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)">
+        <area shape="circle" coords="383,355,20" href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro">
+        <area shape="circle" coords="362,310,20" href="https://pt.wikipedia.org/wiki/Minas_Gerais">
+        <area shape="circle" coords="408,323,20" href="https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)">
+        <area shape="circle" coords="240,327,20" href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul">
+        <area shape="circle" coords="295,263,20" href="https://pt.wikipedia.org/wiki/Goi%C3%A1s">
+        <area shape="circle" coords="229,233,20" href="https://pt.wikipedia.org/wiki/Mato_Grosso">
+        <area shape="circle" coords="325,267,20" href="https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)">
+        <area shape="circle" coords="398,277,20" href="https://pt.wikipedia.org/wiki/Bahia">
+        <area shape="circle" coords="327,198,20" href="https://pt.wikipedia.org/wiki/Tocantins">
+        <area shape="circle" coords="391,170,20" href="https://pt.wikipedia.org/wiki/Piau%C3%AD">
+        <area shape="circle" coords="352,132,20" href="https://pt.wikipedia.org/wiki/Maranh%C3%A3o">
+        <area shape="circle" coords="433,135,20" href="https://pt.wikipedia.org/wiki/Cear%C3%A1">
+        <area shape="circle" coords="455,208,20" href="https://pt.wikipedia.org/wiki/Sergipe">
+        <area shape="circle" coords="464,196,20" href="https://pt.wikipedia.org/wiki/Alagoas">
+        <area shape="circle" coords="449,182,20" href="https://pt.wikipedia.org/wiki/Pernambuco">
+        <area shape="circle" coords="475,168,20" href="https://pt.wikipedia.org/wiki/Para%C3%ADba">
+        <area shape="circle" coords="473,151,20" href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Norte">
+        <area shape="circle" coords="255,133,20" href="https://pt.wikipedia.org/wiki/Par%C3%A1">
+        <area shape="circle" coords="281,51,20" href="https://pt.wikipedia.org/wiki/Amap%C3%A1">
+        <area shape="circle" coords="136,212,20" href="https://pt.wikipedia.org/wiki/Roraima">
+        <area shape="circle" coords="123,121,20" href="https://pt.wikipedia.org/wiki/Amazonas">
+        <area shape="circle" coords="41,184,20" href="https://pt.wikipedia.org/wiki/Acre">
+        <area shape="circle" coords="163,47,20" href="https://pt.wikipedia.org/wiki/Rond%C3%B4nia">
+    </map>
+
+    <div class="imagem">
+        <img src="mapa_brasil.jpg" usemap="#meu_mapa">
+        <img class="boneco" id="boneco" src="boneco.gif" width="80px">
+    </div>
+</body>
+
+</html>
